@@ -1,29 +1,29 @@
-function gsbT(a,b,c) {
+function rgbT(a,b,c) {
     return [a,b,c];
 }
 
 // vintage
-var V11 = gsbT(112,48,48);var V12 = gsbT(47,52,59);var V13 = gsbT(126,130,122);var V14 = gsbT(227,205,164);var V15 = gsbT(199,121,102)
-var V21 = gsbT(94,140,101);var V22 = gsbT(166,155,125);var V23 = gsbT(244,226,204);var V24 = gsbT(157,123,111);var V25 = gsbT(140,70,63)
-var V31 = gsbT(193,111,80);var V32 = gsbT(235,220,200);var V33 = gsbT(134,105,76);var V34 = gsbT(224,203,177);var V35 = gsbT(109,91,84)
-var V41 = gsbT(89,67,54);var V42 = gsbT(166,108,75);var V43 = gsbT(219,180,137);var V44 = gsbT(162,137,106);var V45 = gsbT(117,111,89)
-var V51 = gsbT(166,150,119);var V52 = gsbT(64,59,51);var V53 = gsbT(191,138,73);var V54 = gsbT(217,191,160);var V55 = gsbT(13,13,13)
-var V61 = gsbT(146,134,120);var V62 = gsbT(160,207,174);var V63 = gsbT(248,224,171);var V64 = gsbT(194,123,112);var V65 = gsbT(78,55,68)
-var V71 = gsbT(217,106,126);var V72 = gsbT(64,38,43);var V73 = gsbT(166,56,86);var V74 = gsbT(217,194,167);var V75 = gsbT(217,172,163)
-var V81 = gsbT(140,22,44);var V82 = gsbT(146,166,104);var V83 = gsbT(242,129,87);var V84 = gsbT(217,54,54);var V85 = gsbT(64,20,20)
-var V91 = gsbT(28,66,73);var V92 = gsbT(138,184,162);var V93 = gsbT(250,255,219);var V94 = gsbT(199,175,63);var V95 = gsbT(41,45,48)
-var V01 = gsbT(1,17,38);var V02 = gsbT(4,50,89);var V03 = gsbT(35,110,140);var V04 = gsbT(252,201,189);var V05 = gsbT(242,87,100)
+var V11 = rgbT(112,48,48);var V12 = rgbT(47,52,59);var V13 = rgbT(126,130,122);var V14 = rgbT(227,205,164);var V15 = rgbT(199,121,102)
+var V21 = rgbT(94,140,101);var V22 = rgbT(166,155,125);var V23 = rgbT(244,226,204);var V24 = rgbT(157,123,111);var V25 = rgbT(140,70,63)
+var V31 = rgbT(193,111,80);var V32 = rgbT(235,220,200);var V33 = rgbT(134,105,76);var V34 = rgbT(224,203,177);var V35 = rgbT(109,91,84)
+var V41 = rgbT(89,67,54);var V42 = rgbT(166,108,75);var V43 = rgbT(219,180,137);var V44 = rgbT(162,137,106);var V45 = rgbT(117,111,89)
+var V51 = rgbT(166,150,119);var V52 = rgbT(64,59,51);var V53 = rgbT(191,138,73);var V54 = rgbT(217,191,160);var V55 = rgbT(13,13,13)
+var V61 = rgbT(146,134,120);var V62 = rgbT(160,207,174);var V63 = rgbT(248,224,171);var V64 = rgbT(194,123,112);var V65 = rgbT(78,55,68)
+var V71 = rgbT(217,106,126);var V72 = rgbT(64,38,43);var V73 = rgbT(166,56,86);var V74 = rgbT(217,194,167);var V75 = rgbT(217,172,163)
+var V81 = rgbT(140,22,44);var V82 = rgbT(146,166,104);var V83 = rgbT(242,129,87);var V84 = rgbT(217,54,54);var V85 = rgbT(64,20,20)
+var V91 = rgbT(28,66,73);var V92 = rgbT(138,184,162);var V93 = rgbT(250,255,219);var V94 = rgbT(199,175,63);var V95 = rgbT(41,45,48)
+var V01 = rgbT(1,17,38);var V02 = rgbT(4,50,89);var V03 = rgbT(35,110,140);var V04 = rgbT(252,201,189);var V05 = rgbT(242,87,100)
 // pastel
-var P01 = gsbT(203, 157, 240);var P02 = gsbT(240, 193, 225);var P03 = gsbT(253, 219, 187);var P04 = gsbT(255, 249, 191)
-var P11 = gsbT(191, 236, 255);var P12 = gsbT(205, 193, 255);var P13 = gsbT(255, 246, 227);var P14 = gsbT(255, 204, 234)
-var P21 = gsbT(255, 247, 209);var P22 = gsbT(255, 236, 200);var P23 = gsbT(255, 208, 155);var P24 = gsbT(255, 176, 176)
-var P31 = gsbT(231, 204, 204);var P32 = gsbT(237, 232, 220);var P33 = gsbT(165, 182, 141);var P34 = gsbT(193, 207, 161)
-var P41 = gsbT(229, 217, 242);var P42 = gsbT(245, 239, 255);var P43 = gsbT(205, 193, 255);var P44 = gsbT(165, 148, 249)
-var P51 = gsbT(240, 168, 208);var P52 = gsbT(247, 181, 202);var P53 = gsbT(255, 198, 198);var P54 = gsbT(255, 235, 212)
-var P61 = gsbT(181, 192, 208);var P62 = gsbT(204, 211, 202);var P63 = gsbT(245, 232, 221);var P64 = gsbT(238, 211, 217)
-var P71 = gsbT(245, 238, 230);var P72 = gsbT(255, 248, 227);var P73 = gsbT(243, 215, 202);var P74 = gsbT(230, 164, 180)
-var P81 = gsbT(128, 188, 189);var P82 = gsbT(170, 217, 187);var P83 = gsbT(213, 240, 193);var P84 = gsbT(249, 247, 201)
-var P91 = gsbT(117, 106, 182);var P92 = gsbT(172, 135, 197);var P93 = gsbT(224, 174, 208);var P94 = gsbT(255, 229, 229)
+var P01 = rgbT(203, 157, 240);var P02 = rgbT(240, 193, 225);var P03 = rgbT(253, 219, 187);var P04 = rgbT(255, 249, 191)
+var P11 = rgbT(191, 236, 255);var P12 = rgbT(205, 193, 255);var P13 = rgbT(255, 246, 227);var P14 = rgbT(255, 204, 234)
+var P21 = rgbT(255, 247, 209);var P22 = rgbT(255, 236, 200);var P23 = rgbT(255, 208, 155);var P24 = rgbT(255, 176, 176)
+var P31 = rgbT(231, 204, 204);var P32 = rgbT(237, 232, 220);var P33 = rgbT(165, 182, 141);var P34 = rgbT(193, 207, 161)
+var P41 = rgbT(229, 217, 242);var P42 = rgbT(245, 239, 255);var P43 = rgbT(205, 193, 255);var P44 = rgbT(165, 148, 249)
+var P51 = rgbT(240, 168, 208);var P52 = rgbT(247, 181, 202);var P53 = rgbT(255, 198, 198);var P54 = rgbT(255, 235, 212)
+var P61 = rgbT(181, 192, 208);var P62 = rgbT(204, 211, 202);var P63 = rgbT(245, 232, 221);var P64 = rgbT(238, 211, 217)
+var P71 = rgbT(245, 238, 230);var P72 = rgbT(255, 248, 227);var P73 = rgbT(243, 215, 202);var P74 = rgbT(230, 164, 180)
+var P81 = rgbT(128, 188, 189);var P82 = rgbT(170, 217, 187);var P83 = rgbT(213, 240, 193);var P84 = rgbT(249, 247, 201)
+var P91 = rgbT(117, 106, 182);var P92 = rgbT(172, 135, 197);var P93 = rgbT(224, 174, 208);var P94 = rgbT(255, 229, 229)
 
 const vintageSETTING = ['V', 6]
 const pastelSETTING = ['P', 5]
@@ -47,7 +47,7 @@ const pastel = d(pastelSETTING);
 
 // console.log(pastel[9][3]); // [255, 229, 229]
 
-// 2개의 색상의 gsb 유사도 계산
+// 2개의 색상의 gsb 유사도 계산 // 사용 안함함
 function calDistance(c1, c2) { // c1 = [r, g, b]
     const rDiff = c1[0] - c2[0];
     const gDiff = c1[1] - c2[1];
@@ -153,12 +153,12 @@ function result(color) {
             `
         }
 
-        ar += "<td rowspan='2'>평균</td><td>전체 red, green, blue 중 차지하는 비율 평균 </td>"
+        ar += "<td rowspan='2'>평균</td><td>전체 red, green, blue 중 차지하는 비율</td>"
         ar += `<td class='${result[i][1][0][0].rs}'>${result[i][1][0][0].AvgR}%</td>`
         ar += `<td class='${result[i][1][0][0].gs}'>${result[i][1][0][0].AvgG}%</td>`
         ar += `<td class='${result[i][1][0][0].bs}'>${result[i][1][0][0].AvgB}%</td></tr><tr>`
 
-        ar += `<td class='g'>red, green, blue 존재 비율 평균 </td>`
+        ar += `<td class='g'>red, green, blue 존재 비율</td>`
         ar += `<td class='${result[i][1][0][1].rs}'>${result[i][1][0][1].AvgR}%</td>`
         ar += `<td class='${result[i][1][0][1].gs}'>${result[i][1][0][1].AvgG}%</td>`
         ar += `<td class='${result[i][1][0][1].bs}'>${result[i][1][0][1].AvgB}%</td></tr></table>`
