@@ -141,7 +141,7 @@ function result(color) {
             let colg = color[i][j][1]
             let colb = color[i][j][2]
             ar += `
-                <td rowspan="2"><span style="color: rgb(${colr}, ${colg}, ${colb})">■</span></td>
+                <td rowspan="2" style="background-color: rgb(${colr}, ${colg}, ${colb})"></td>
                 <td>전체 red, green, blue 중 차지하는 비율</td>
                 <td class='${result[i][0][j][0].rs}'>${result[i][0][j][0].r}%</td>
                 <td class='${result[i][0][j][0].gs}'>${result[i][0][j][0].g}%</td>
