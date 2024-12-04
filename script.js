@@ -25,12 +25,12 @@ var P71 = rgbT(245, 238, 230);var P72 = rgbT(255, 248, 227);var P73 = rgbT(243, 
 var P81 = rgbT(128, 188, 189);var P82 = rgbT(170, 217, 187);var P83 = rgbT(213, 240, 193);var P84 = rgbT(249, 247, 201)
 var P91 = rgbT(117, 106, 182);var P92 = rgbT(172, 135, 197);var P93 = rgbT(224, 174, 208);var P94 = rgbT(255, 229, 229)
 
-const vintageSETTING = ['V', 6]
-const pastelSETTING = ['P', 5]
+const vintageSETTING = ['V', 6, 10] // [앞문자, 묶음 단위+1, 있는 개수]
+const pastelSETTING = ['P', 5, 10] // (P01 ~ P04)*10개 // ~ P94까지
 
 function d(d){
     const element = []
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < d[2]; i++) {
         const el = []
         for (let j = 1; j < d[1]; j++) {
             let ddd = d[0] + i + j;
