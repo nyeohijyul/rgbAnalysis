@@ -61,22 +61,34 @@ function colRatio(c) { // c = [r, g, b]
 
     let rs, gs, bs
 
-    if (c[0] / total * 100 > 80){ rs = "a" } else if (c[0] / total * 100 > 60){ rs = "b" } else if (c[0] / total * 100 > 40){ rs = "c" } else if (c[0] / total * 100 > 20){ rs = "d" } else { rs = "e" }
-    if (c[1] / total * 100 > 80){ gs = "a" } else if (c[1] / total * 100 > 60){ gs = "b" } else if (c[1] / total * 100 > 40){ gs = "c" } else if (c[1] / total * 100 > 20){ gs = "d" } else { gs = "e" }
-    if (c[2] / total * 100 > 80){ bs = "a" } else if (c[2] / total * 100 > 60){ bs = "b" } else if (c[2] / total * 100 > 40){ bs = "c" } else if (c[2] / total * 100 > 20){ bs = "d" } else { bs = "e" }
+    let r = c[0] / total * 100
+    let g = c[1] / total * 100
+    let b = c[2] / total * 100
 
-    return { r: Math.round(c[0] / total * 10000)/100, g: Math.round(c[1] / total * 10000)/100, b: Math.round(c[2] / total * 10000)/100, rs: rs, gs: gs, bs: bs };
+    if (r > 80){ rs = "a" } else if (r > 60){ rs = "b" } else if (r > 40){ rs = "c" } else if (r > 20){ rs = "d" } else { rs = "e" }
+    if (g > 80){ gs = "a" } else if (g > 60){ gs = "b" } else if (g > 40){ gs = "c" } else if (g > 20){ gs = "d" } else { gs = "e" }
+    if (b > 80){ bs = "a" } else if (b > 60){ bs = "b" } else if (b > 40){ bs = "c" } else if (b > 20){ bs = "d" } else { bs = "e" }
+
+    if (r > g && r > b) { rs += " u"} else if (g > r && g > b) { gs += " u"} else {bs += " u"}
+
+    return { r: Math.round(r * 100)/100, g: Math.round(g * 100)/100, b: Math.round(b * 100)/100, rs: rs, gs: gs, bs: bs };
 }
 
 // 색상 속 gsb 비율(2) (원색에 가까운 정도) 계산
 function gsbRatio(c) { // c = [r, g, b]
     let rs, gs, bs
 
-    if (c[0] / 255 * 100 > 80){ rs = "a" } else if (c[0] / 255 * 100 > 60){ rs = "b" } else if (c[0] / 255 * 100 > 40){ rs = "c" } else if (c[0] / 255 * 100 > 20){ rs = "d" } else { rs = "e" }
-    if (c[1] / 255 * 100 > 80){ gs = "a" } else if (c[1] / 255 * 100 > 60){ gs = "b" } else if (c[1] / 255 * 100 > 40){ gs = "c" } else if (c[1] / 255 * 100 > 20){ gs = "d" } else { gs = "e" }
-    if (c[2] / 255 * 100 > 80){ bs = "a" } else if (c[2] / 255 * 100 > 60){ bs = "b" } else if (c[2] / 255 * 100 > 40){ bs = "c" } else if (c[2] / 255 * 100 > 20){ bs = "d" } else { bs = "e" }
+    let r = c[0] / 255 * 100
+    let g = c[1] / 255 * 100
+    let b = c[2] / 255 * 100
 
-    return { r: Math.round(c[0] / 255 * 10000)/100, g: Math.round(c[1] / 255 * 10000)/100, b: Math.round(c[2] / 255 * 10000)/100, rs: rs, gs: gs, bs: bs };
+    if (r > 80){ rs = "a" } else if (r > 60){ rs = "b" } else if (r > 40){ rs = "c" } else if (r > 20){ rs = "d" } else { rs = "e" }
+    if (g > 80){ gs = "a" } else if (g > 60){ gs = "b" } else if (g > 40){ gs = "c" } else if (g > 20){ gs = "d" } else { gs = "e" }
+    if (b > 80){ bs = "a" } else if (b > 60){ bs = "b" } else if (b > 40){ bs = "c" } else if (b > 20){ bs = "d" } else { bs = "e" }
+
+    if (r > g && r > b) { rs += " u"} else if (g > r && g > b) { gs += " u"} else {bs += " u"}
+
+    return { r: Math.round(r * 100)/100, g: Math.round(g * 100)/100, b: Math.round(b * 100)/100, rs: rs, gs: gs, bs: bs };
 }
 
 // 색상 모음의 gsb 비율(1) 평균 계산
@@ -93,6 +105,27 @@ function colRatioAvg(colors){ // colors = [c1, c2, c3, c4 ...]
     if (AvgG > 80){ gs = "a" } else if (AvgG > 60){ gs = "b" } else if (AvgG > 40){ gs = "c" } else if (AvgG > 20){ gs = "d" } else { gs = "e" }
     if (AvgB > 80){ bs = "a" } else if (AvgB > 60){ bs = "b" } else if (AvgB > 40){ bs = "c" } else if (AvgB > 20){ bs = "d" } else { bs = "e" }
 
+    if (AvgR > AvgG && AvgR > AvgB) { rs += " u"} else if (AvgG > AvgR && AvgG > AvgB) { gs += " u"} else {bs += " u"}
+
+    return { AvgR: Math.round(AvgR* 100)/100, AvgG: Math.round(AvgG* 100)/100, AvgB: Math.round(AvgB* 100)/100, rs: rs, gs: gs, bs: bs }
+}
+
+// 색상 모음의 gsb 비율(2) 평균 계산
+function gsbRatioAvg(colors){ // colors = [c1, c2, c3, c4 ...]
+    const ratios = colors.map(c => gsbRatio(c));
+
+    const AvgR = ratios.reduce((sum, ratio) => sum + ratio.r, 0) / ratios.length
+    const AvgG = ratios.reduce((sum, ratio) => sum + ratio.g, 0) / ratios.length
+    const AvgB = ratios.reduce((sum, ratio) => sum + ratio.b, 0) / ratios.length
+
+    let rs, gs, bs
+
+    if (AvgR > 80){ rs = "a" } else if (AvgR > 60){ rs = "b" } else if (AvgR > 40){ rs = "c" } else if (AvgR > 20){ rs = "d" } else { rs = "e" }
+    if (AvgG > 80){ gs = "a" } else if (AvgG > 60){ gs = "b" } else if (AvgG > 40){ gs = "c" } else if (AvgG > 20){ gs = "d" } else { gs = "e" }
+    if (AvgB > 80){ bs = "a" } else if (AvgB > 60){ bs = "b" } else if (AvgB > 40){ bs = "c" } else if (AvgB > 20){ bs = "d" } else { bs = "e" }
+
+    if (AvgR > AvgG && AvgR > AvgB) { rs += " u"} else if (AvgG > AvgR && AvgG > AvgB) { gs += " u"} else {bs += " u"}
+    
     return { AvgR: Math.round(AvgR* 100)/100, AvgG: Math.round(AvgG* 100)/100, AvgB: Math.round(AvgB* 100)/100, rs: rs, gs: gs, bs: bs }
 }
 
