@@ -142,6 +142,8 @@ function gsbRatioAvg(colors){ // colors = [c1, c2, c3, c4 ...]
     if (AvgR > 80){ rs = "a" } else if (AvgR > 60){ rs = "b" } else if (AvgR > 40){ rs = "c" } else if (AvgR > 20){ rs = "d" } else { rs = "e" }
     if (AvgG > 80){ gs = "a" } else if (AvgG > 60){ gs = "b" } else if (AvgG > 40){ gs = "c" } else if (AvgG > 20){ gs = "d" } else { gs = "e" }
     if (AvgB > 80){ bs = "a" } else if (AvgB > 60){ bs = "b" } else if (AvgB > 40){ bs = "c" } else if (AvgB > 20){ bs = "d" } else { bs = "e" }
+
+    if (AvgR > AvgG && AvgR > AvgB) { rs += " u"} else if (AvgG > AvgR && AvgG > AvgB) { gs += " u"} else {bs += " u"}
     
     return { AvgR: Math.round(AvgR* 100)/100, AvgG: Math.round(AvgG* 100)/100, AvgB: Math.round(AvgB* 100)/100, rs: rs, gs: gs, bs: bs }
 }
