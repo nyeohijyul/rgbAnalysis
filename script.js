@@ -177,7 +177,7 @@ document.getElementById("pastel").addEventListener("click", ()=>{
 })
 
 //romantic 
-var RO01 = rgbT(247,197,200);var RO02 = rgbT(248,197,184);var RO03 = rgbT(253,214,179);var RO04 = rgbT(253,214,199);var RO05 = rgbT(240,241,198);var RO06 = rgbT(209,201,223);var RO07 = rgbT(226,191,212);var RO08 = rgbT(250,193,134);var RO09 = rgbT(255,234,154);var RO010 = rgbT(198,218,135);var RO011 = rgbT(150,200,172);var RO012 = rgbT(237,157,173);var RO013 = rgbT(64,164,113);var RO014 = rgbT(0,157,165);var RO015 = rgbT(38,38,159);
+var RO01 = rgbT(247,197,200);var RO02 = rgbT(248,197,184);var RO03 = rgbT(253,214,179);var RO04 = rgbT(255,246,199);var RO05 = rgbT(240,241,198);var RO06 = rgbT(209,201,223);var RO07 = rgbT(226,191,212);var RO08 = rgbT(250,193,134);var RO09 = rgbT(255,234,154);var RO010 = rgbT(198,218,135);var RO011 = rgbT(150,200,172);var RO012 = rgbT(237,157,173);var RO013 = rgbT(64,164,113);var RO014 = rgbT(0,157,165);var RO015 = rgbT(38,38,159);
 var RO016 = rgbT(209,107,144);
 const romanticSETTING = ['RO', 17, 1]
 const romantic = d(romanticSETTING);
