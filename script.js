@@ -226,3 +226,10 @@ var RO016 = rgbT(209,107,144);
 const romanticSETTING = ['RO', 17, 1]
 const romantic = d(romanticSETTING);
 document.getElementById("romantic").addEventListener("click",()=>{result(romantic)})
+
+//natural
+var NA01 = rgbT(248,197,184);var NA02 = rgbT(253,217,179);var NA03 = rgbT(255,246,199);var NA04 = rgbT(240,241,198);var NA05 = rgbT(213,233,214);var NA06 = rgbT(188,192,221);var NA07 = rgbT(209,201,223);var NA08 = rgbT(209,174,182);var NA09 = rgbT(210,174,168);var NA010 = rgbT(211,173,154);var NA011 = rgbT(214,189,163);var NA012 = rgbT(178,189,170);var NA013 = rgbT(157,180,168);var NA014 = rgbT(156,181,183);var NA015 = rgbT(190,163,180);var NA016 = rgbT(240,154,132);var NA017 = rgbT(250,193,134);var NA018 = rgbT(255,234,154);var NA019 = rgbT(172,203,57);
+var NA020 = rgbT(149,169,103);
+const naturalSETTING = ['NA', 21, 1]
+const natural = d(naturalSETTING);
+document.getElementById("natural").addEventListener("click",()=>{result(natural)})
