@@ -47,7 +47,7 @@ const pastel = d(pastelSETTING);
 
 // console.log(pastel[9][3]); // [255, 229, 229]
 
-// 2개의 색상의 gsb 유사도 계산 // 사용 안함함
+// 2개의 색상의 rgb 유사도 계산 // 사용 안함함
 function calDistance(c1, c2) { // c1 = [r, g, b]
     const rDiff = c1[0] - c2[0];
     const gDiff = c1[1] - c2[1];
@@ -55,7 +55,7 @@ function calDistance(c1, c2) { // c1 = [r, g, b]
     return Math.sqrt(rDiff * rDiff + gDiff * gDiff + bDiff * bDiff);
 }
 
-// 색상 속 gsb 비율(1) (전체 중 차지 비율) 계산
+// 색상 속 rgb 비율(1) (전체 중 차지 비율) 계산
 function colRatio(c) { // c = [r, g, b]
     const total = c[0] + c[1] + c[2];
 
@@ -74,8 +74,8 @@ function colRatio(c) { // c = [r, g, b]
     return { r: Math.round(r * 100)/100, g: Math.round(g * 100)/100, b: Math.round(b * 100)/100, rs: rs, gs: gs, bs: bs };
 }
 
-// 색상 속 gsb 비율(2) (원색에 가까운 정도) 계산
-function gsbRatio(c) { // c = [r, g, b]
+// 색상 속 rgb 비율(2) (원색에 가까운 정도) 계산
+function rgbRatio(c) { // c = [r, g, b]
     let rs, gs, bs
 
     let r = c[0] / 255 * 100
@@ -91,7 +91,7 @@ function gsbRatio(c) { // c = [r, g, b]
     return { r: Math.round(r * 100)/100, g: Math.round(g * 100)/100, b: Math.round(b * 100)/100, rs: rs, gs: gs, bs: bs };
 }
 
-// 색상 모음의 gsb 비율(1) 평균 계산
+// 색상 모음의 rgb 비율(1) 평균 계산
 function colRatioAvg(colors){ // colors = [c1, c2, c3, c4 ...]
     const ratios = colors.map(c => colRatio(c));
 
@@ -110,9 +110,9 @@ function colRatioAvg(colors){ // colors = [c1, c2, c3, c4 ...]
     return { AvgR: Math.round(AvgR* 100)/100, AvgG: Math.round(AvgG* 100)/100, AvgB: Math.round(AvgB* 100)/100, rs: rs, gs: gs, bs: bs }
 }
 
-// 색상 모음의 gsb 비율(2) 평균 계산
-function gsbRatioAvg(colors){ // colors = [c1, c2, c3, c4 ...]
-    const ratios = colors.map(c => gsbRatio(c));
+// 색상 모음의 rgb 비율(2) 평균 계산
+function rgbRatioAvg(colors){ // colors = [c1, c2, c3, c4 ...]
+    const ratios = colors.map(c => rgbRatio(c));
 
     const AvgR = ratios.reduce((sum, ratio) => sum + ratio.r, 0) / ratios.length
     const AvgG = ratios.reduce((sum, ratio) => sum + ratio.g, 0) / ratios.length
@@ -129,9 +129,9 @@ function gsbRatioAvg(colors){ // colors = [c1, c2, c3, c4 ...]
     return { AvgR: Math.round(AvgR* 100)/100, AvgG: Math.round(AvgG* 100)/100, AvgB: Math.round(AvgB* 100)/100, rs: rs, gs: gs, bs: bs }
 }
 
-// 색상 모음의 gsb 비율(2) 평균 계산
-function gsbRatioAvg(colors){ // colors = [c1, c2, c3, c4 ...]
-    const ratios = colors.map(c => gsbRatio(c));
+// 색상 모음의 rgb 비율(2) 평균 계산
+function rgbRatioAvg(colors){ // colors = [c1, c2, c3, c4 ...]
+    const ratios = colors.map(c => rgbRatio(c));
 
     const AvgR = ratios.reduce((sum, ratio) => sum + ratio.r, 0) / ratios.length
     const AvgG = ratios.reduce((sum, ratio) => sum + ratio.g, 0) / ratios.length
@@ -157,11 +157,11 @@ function result(color) {
         const res2 = [];
         for (let j = 0; j < color[i].length; j++) {
             let k1 = colRatio(color[i][j])
-            let k2 = gsbRatio(color[i][j])
+            let k2 = rgbRatio(color[i][j])
             res1.push([k1,k2])
         }
         let k3 = colRatioAvg(color[i])
-        let k4 = gsbRatioAvg(color[i])
+        let k4 = rgbRatioAvg(color[i])
         res2.push([k3, k4])
         result.push([res1, res2])
     }
