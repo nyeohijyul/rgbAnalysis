@@ -47,7 +47,7 @@ const pastel = d(pastelSETTING);
 
 // console.log(pastel[9][3]); // [255, 229, 229]
 
-// 2개의 색상의 rgb 유사도 계산 // 사용 안함함
+// 2개의 색상의 rgb 유사도 계산 // 사용 안함
 function calDistance(c1, c2) { // c1 = [r, g, b]
     const rDiff = c1[0] - c2[0];
     const gDiff = c1[1] - c2[1];
@@ -169,7 +169,7 @@ function result(color) {
     let article = "";
 
     for (let i = 0; i < result.length; i++) {
-        let ar = "<div class = 'color'><table><tr><th colspan='2'>색상</th><th>R</th><th>G</th><th>B</th></tr><tr>"
+        let ar = `<div class = 'color'><table><tr><th colspan='2'>${i + 1}</th><th>R</th><th>G</th><th>B</th></tr><tr>`
 
         for (let j = 0; j < result[i][0].length; j++) {
             let colr = color[i][j][0]
