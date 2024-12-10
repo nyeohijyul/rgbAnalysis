@@ -227,9 +227,9 @@ const romanticSETTING = ['RO', 17, 1]
 const romantic = d(romanticSETTING);
 document.getElementById("romantic").addEventListener("click",()=>{result(romantic)})
 
-//natural
-var NA01 = rgbT(248,197,184);var NA02 = rgbT(253,217,179);var NA03 = rgbT(255,246,199);var NA04 = rgbT(240,241,198);var NA05 = rgbT(213,233,214);var NA06 = rgbT(188,192,221);var NA07 = rgbT(209,201,223);var NA08 = rgbT(209,174,182);var NA09 = rgbT(210,174,168);var NA010 = rgbT(211,173,154);var NA011 = rgbT(214,189,163);var NA012 = rgbT(178,189,170);var NA013 = rgbT(157,180,168);var NA014 = rgbT(156,181,183);var NA015 = rgbT(190,163,180);var NA016 = rgbT(240,154,132);var NA017 = rgbT(250,193,134);var NA018 = rgbT(255,234,154);var NA019 = rgbT(172,203,57);
-var NA020 = rgbT(149,169,103);
-const naturalSETTING = ['NA', 21, 1]
-const natural = d(naturalSETTING);
-document.getElementById("natural").addEventListener("click",()=>{result(natural)})
+//reposeful
+var RP01 = rgbT(255,246,199);var RP02 = rgbT(240,241,198);var RP03 = rgbT(216,233,214);var RP04 = rgbT(188,192,221);var RP05 = rgbT(209,201,223);var RP06 = rgbT(210,174,168);var RP07 = rgbT(211,173,154);var RP08 = rgbT(214,189,163);var RP09 = rgbT(178,189,170);var RP010 = rgbT(157,180,168);var RP011 = rgbT(156,181,168);var RP012 = rgbT(198,218,135);var RP013 = rgbT(150,200,172);var RP014 = rgbT(147,202,207);var RP015 = rgbT(99,141,12);var RP016 = rgbT(0,108,93);
+var RP017 = rgbT(0,103,119);
+const reposefulSETTING = ['RP', 18, 1]
+const reposeful = d(reposefulSETTING);
+document.getElementById("reposeful").addEventListener("click",()=>{result(reposeful)})
