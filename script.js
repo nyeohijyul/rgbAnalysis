@@ -177,23 +177,23 @@ function result(color) {
             let colb = color[i][j][2]
             ar += `
                 <td rowspan="2" style="background-color: rgb(${colr}, ${colg}, ${colb})"></td>
-                <td>전체 red, green, blue 중 차지하는 비율</td>
+                <td>색상 값의 합에서 차지하는 비율</td>
                 <td class='${result[i][0][j][0].rs}'>${result[i][0][j][0].r}%</td>
                 <td class='${result[i][0][j][0].gs}'>${result[i][0][j][0].g}%</td>
                 <td class='${result[i][0][j][0].bs}'>${result[i][0][j][0].b}%</td></tr><tr>
-                <td class='g'>red, green, blue 존재 비율</td>
+                <td class='g'>255를 100%으로 하였을 때 존재하는 비율</td>
                 <td class='${result[i][0][j][1].rs}'>${result[i][0][j][1].r}%</td>
                 <td class='${result[i][0][j][1].gs}'>${result[i][0][j][1].g}%</td>
                 <td class='${result[i][0][j][1].bs}'>${result[i][0][j][1].b}%</td></tr><tr>
             `
         }
 
-        ar += "<td rowspan='2'>평균</td><td>전체 red, green, blue 중 차지하는 비율</td>"
+        ar += "<td rowspan='2'>평균</td><td>색상 값의 합에서 차지하는 비율</td>"
         ar += `<td class='${result[i][1][0][0].rs}'>${result[i][1][0][0].AvgR}%</td>`
         ar += `<td class='${result[i][1][0][0].gs}'>${result[i][1][0][0].AvgG}%</td>`
         ar += `<td class='${result[i][1][0][0].bs}'>${result[i][1][0][0].AvgB}%</td></tr><tr>`
 
-        ar += `<td class='g'>red, green, blue 존재 비율</td>`
+        ar += `<td class='g'>255를 100%으로 하였을 때 존재하는 비율</td>`
         ar += `<td class='${result[i][1][0][1].rs}'>${result[i][1][0][1].AvgR}%</td>`
         ar += `<td class='${result[i][1][0][1].gs}'>${result[i][1][0][1].AvgG}%</td>`
         ar += `<td class='${result[i][1][0][1].bs}'>${result[i][1][0][1].AvgB}%</td></tr></table>`
