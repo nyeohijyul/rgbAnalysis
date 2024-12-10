@@ -186,9 +186,9 @@ function result(color) {
                 <td class='${result[i][0][j][1].gs}'>${result[i][0][j][1].g}%</td>
                 <td class='${result[i][0][j][1].bs}'>${result[i][0][j][1].b}%</td></tr><tr>
                 <td>곱 * 100</td>
-                <td>${result[i][0][j][0].r * result[i][0][j][1].r *100}</td>
-                <td>${result[i][0][j][0].b * result[i][0][j][1].g *100}</td>
-                <td>${result[i][0][j][0].g * result[i][0][j][1].b *100}</td></tr><tr>
+                <td>${Math.round(result[i][0][j][0].r * result[i][0][j][1].r *10)/10}</td>
+                <td>${Math.round(result[i][0][j][0].b * result[i][0][j][1].g *10)/10}</td>
+                <td>${Math.round(result[i][0][j][0].g * result[i][0][j][1].b *10)/10}</td></tr><tr>
             `
         }
 
@@ -202,10 +202,10 @@ function result(color) {
         ar += `<td class='${result[i][1][0][1].gs}'>${result[i][1][0][1].AvgG}%</td>`
         ar += `<td class='${result[i][1][0][1].bs}'>${result[i][1][0][1].AvgB}%</td></tr><tr>`
         
-        ar += `<td>곱 * 100</td>`
-        ar += `<td>${result[i][1][0][0].AvgR * result[i][1][0][1].AvgR *100}</td>`
-        ar += `<td>${result[i][1][0][0].AvgG * result[i][1][0][1].AvgG *100}</td>`
-        ar += `<td>${result[i][1][0][0].AvgB * result[i][1][0][1].AvgB *100}</td></tr><tr></table>`
+        ar += `<td>곱</td>`
+        ar += `<td>${Math.round(result[i][1][0][0].AvgR * result[i][1][0][1].AvgR *10)/10}</td>`
+        ar += `<td>${Math.round(result[i][1][0][0].AvgG * result[i][1][0][1].AvgG *10)/10}</td>`
+        ar += `<td>${Math.round(result[i][1][0][0].AvgB * result[i][1][0][1].AvgB *10)/10}</td></tr><tr></table>`
 
         article += ar + "</div>"
     }
