@@ -176,7 +176,7 @@ function result(color) {
             let colg = color[i][j][1]
             let colb = color[i][j][2]
             ar += `
-                <td rowspan="2" style="background-color: rgb(${colr}, ${colg}, ${colb})"></td>
+                <td rowspan="3" style="background-color: rgb(${colr}, ${colg}, ${colb})">(${colr}, ${colg}, ${colb})</td>
                 <td>색상 값의 합에서 차지하는 비율</td>
                 <td class='${result[i][0][j][0].rs}'>${result[i][0][j][0].r}%</td>
                 <td class='${result[i][0][j][0].gs}'>${result[i][0][j][0].g}%</td>
@@ -185,10 +185,14 @@ function result(color) {
                 <td class='${result[i][0][j][1].rs}'>${result[i][0][j][1].r}%</td>
                 <td class='${result[i][0][j][1].gs}'>${result[i][0][j][1].g}%</td>
                 <td class='${result[i][0][j][1].bs}'>${result[i][0][j][1].b}%</td></tr><tr>
+                <td>곱 * 100</td>
+                <td>${result[i][0][j][0].r * result[i][0][j][1].r *100}</td>
+                <td>${result[i][0][j][0].b * result[i][0][j][1].g *100}</td>
+                <td>${result[i][0][j][0].g * result[i][0][j][1].b *100}</td></tr><tr>
             `
         }
 
-        ar += "<td rowspan='2'>평균</td><td>색상 값의 합에서 차지하는 비율</td>"
+        ar += "<td rowspan='3'>평균</td><td>색상 값의 합에서 차지하는 비율</td>"
         ar += `<td class='${result[i][1][0][0].rs}'>${result[i][1][0][0].AvgR}%</td>`
         ar += `<td class='${result[i][1][0][0].gs}'>${result[i][1][0][0].AvgG}%</td>`
         ar += `<td class='${result[i][1][0][0].bs}'>${result[i][1][0][0].AvgB}%</td></tr><tr>`
@@ -196,7 +200,12 @@ function result(color) {
         ar += `<td class='g'>255를 100%으로 하였을 때 존재하는 비율</td>`
         ar += `<td class='${result[i][1][0][1].rs}'>${result[i][1][0][1].AvgR}%</td>`
         ar += `<td class='${result[i][1][0][1].gs}'>${result[i][1][0][1].AvgG}%</td>`
-        ar += `<td class='${result[i][1][0][1].bs}'>${result[i][1][0][1].AvgB}%</td></tr></table>`
+        ar += `<td class='${result[i][1][0][1].bs}'>${result[i][1][0][1].AvgB}%</td></tr><tr>`
+        
+        ar += `<td>곱 * 100</td>`
+        ar += `<td>${result[i][1][0][0].AvgR * result[i][1][0][1].AvgR *100}</td>`
+        ar += `<td>${result[i][1][0][0].AvgG * result[i][1][0][1].AvgG *100}</td>`
+        ar += `<td>${result[i][1][0][0].AvgB * result[i][1][0][1].AvgB *100}</td></tr><tr></table>`
 
         article += ar + "</div>"
     }
