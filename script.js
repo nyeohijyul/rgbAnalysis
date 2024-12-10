@@ -169,7 +169,7 @@ function result(color) {
     let article = "";
 
     for (let i = 0; i < result.length; i++) {
-        let ar = `<div class = 'color'><table><tr><th colspan='2'>${i + 1}</th><th>R</th><th>G</th><th>B</th></tr><tr>`
+        let ar = `<div class = 'color'><table><tr><th colspan='2'>조합 ${i + 1}</th><th>R</th><th>G</th><th>B</th></tr><tr>`
 
         for (let j = 0; j < result[i][0].length; j++) {
             let colr = color[i][j][0]
