@@ -3,16 +3,16 @@ function rgbT(a,b,c) {
 }
 
 // vintage
-var V11 = rgbT(112,048,048);var V12 = rgbT(047,052,059);var V13 = rgbT(126,130,122);var V14 = rgbT(227,205,164);var V15 = rgbT(199,121,102)
-var V21 = rgbT(094,140,101);var V22 = rgbT(166,155,125);var V23 = rgbT(244,226,204);var V24 = rgbT(157,123,111);var V25 = rgbT(140,070,063)
-var V31 = rgbT(193,111,080);var V32 = rgbT(235,220,200);var V33 = rgbT(134,105,076);var V34 = rgbT(224,203,177);var V35 = rgbT(109,091,084)
-var V41 = rgbT(089,067,054);var V42 = rgbT(166,108,075);var V43 = rgbT(219,180,137);var V44 = rgbT(162,137,106);var V45 = rgbT(117,111,089)
-var V51 = rgbT(166,150,119);var V52 = rgbT(064,059,051);var V53 = rgbT(191,138,073);var V54 = rgbT(217,191,160);var V55 = rgbT(013,013,013)
-var V61 = rgbT(146,134,120);var V62 = rgbT(160,207,174);var V63 = rgbT(248,224,171);var V64 = rgbT(194,123,112);var V65 = rgbT(078,055,068)
-var V71 = rgbT(217,106,126);var V72 = rgbT(064,038,043);var V73 = rgbT(166,056,086);var V74 = rgbT(217,194,167);var V75 = rgbT(217,172,163)
-var V81 = rgbT(140,022,044);var V82 = rgbT(146,166,104);var V83 = rgbT(242,129,087);var V84 = rgbT(217,054,054);var V85 = rgbT(064,020,020)
-var V91 = rgbT(028,066,073);var V92 = rgbT(138,184,162);var V93 = rgbT(250,255,219);var V94 = rgbT(199,175,063);var V95 = rgbT(041,045,048)
-var V01 = rgbT(001,017,038);var V02 = rgbT(004,050,089);var V03 = rgbT(035,110,140);var V04 = rgbT(252,201,189);var V05 = rgbT(242,087,100)
+var V11 = rgbT(112,48,48);var V12 = rgbT(47,52,59);var V13 = rgbT(126,130,122);var V14 = rgbT(227,205,164);var V15 = rgbT(199,121,102)
+var V21 = rgbT(94,140,101);var V22 = rgbT(166,155,125);var V23 = rgbT(244,226,204);var V24 = rgbT(157,123,111);var V25 = rgbT(140,70,63)
+var V31 = rgbT(193,111,80);var V32 = rgbT(235,220,200);var V33 = rgbT(134,105,76);var V34 = rgbT(224,203,177);var V35 = rgbT(109,91,84)
+var V41 = rgbT(89,67,54);var V42 = rgbT(166,108,75);var V43 = rgbT(219,180,137);var V44 = rgbT(162,137,106);var V45 = rgbT(117,111,89)
+var V51 = rgbT(166,150,119);var V52 = rgbT(64,59,51);var V53 = rgbT(191,138,73);var V54 = rgbT(217,191,160);var V55 = rgbT(13,13,13)
+var V61 = rgbT(146,134,120);var V62 = rgbT(160,207,174);var V63 = rgbT(248,224,171);var V64 = rgbT(194,123,112);var V65 = rgbT(78,55,68)
+var V71 = rgbT(217,106,126);var V72 = rgbT(64,38,43);var V73 = rgbT(166,56,86);var V74 = rgbT(217,194,167);var V75 = rgbT(217,172,163)
+var V81 = rgbT(140,22,44);var V82 = rgbT(146,166,104);var V83 = rgbT(242,129,87);var V84 = rgbT(217,54,54);var V85 = rgbT(64,20,20)
+var V91 = rgbT(28,66,73);var V92 = rgbT(138,184,162);var V93 = rgbT(250,255,219);var V94 = rgbT(199,175,63);var V95 = rgbT(41,45,48)
+var V01 = rgbT(1,17,38);var V02 = rgbT(4,50,89);var V03 = rgbT(35,110,140);var V04 = rgbT(252,201,189);var V05 = rgbT(242,87,100)
 // pastel
 var P01 = rgbT(203, 157, 240);var P02 = rgbT(240, 193, 225);var P03 = rgbT(253, 219, 187);var P04 = rgbT(255, 249, 191)
 var P11 = rgbT(191, 236, 255);var P12 = rgbT(205, 193, 255);var P13 = rgbT(255, 246, 227);var P14 = rgbT(255, 204, 234)
