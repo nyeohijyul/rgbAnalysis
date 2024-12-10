@@ -187,8 +187,8 @@ function result(color) {
                 <td class='${result[i][0][j][1].bs}'>${result[i][0][j][1].b}%</td></tr><tr>
                 <td>곱 * 100</td>
                 <td>${Math.round(result[i][0][j][0].r * result[i][0][j][1].r *10)/10}</td>
-                <td>${Math.round(result[i][0][j][0].b * result[i][0][j][1].g *10)/10}</td>
-                <td>${Math.round(result[i][0][j][0].g * result[i][0][j][1].b *10)/10}</td></tr><tr>
+                <td>${Math.round(result[i][0][j][0].g * result[i][0][j][1].g *10)/10}</td>
+                <td>${Math.round(result[i][0][j][0].b * result[i][0][j][1].b *10)/10}</td></tr><tr>
             `
         }
 
